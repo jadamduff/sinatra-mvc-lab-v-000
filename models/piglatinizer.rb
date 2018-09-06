@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def piglatinize(phrase)
+  def self.piglatinize(phrase)
     split_phrase = phrase.split(' ')
     new_phrase = []
     consonants = [ 'b', 'B', 'c', 'C', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'v', 'V', 'x', 'X', 'z', 'Z', 'w', 'W', 'y', 'Y']
