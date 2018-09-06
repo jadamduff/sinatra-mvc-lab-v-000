@@ -20,5 +20,5 @@ class PigLatinizer
     end
   end
 
-  
+
 end
