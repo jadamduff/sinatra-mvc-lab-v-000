@@ -23,7 +23,7 @@ class PigLatinizer
         new_word << "ay"
         new_phrase << new_word
       elsif vowels.include?(word[0])
-        word << "way"
+        new_word = word << "way"
         new_phrase << new_word
       end
     end
