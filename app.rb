@@ -8,6 +8,7 @@ class App < Sinatra::Base
 
   post '/' do
     @words = params[:user_phrase]
-    "#{@words}"
+    @platin = PigLatinizer.new
+    "#{@platin.piglatinize(@words)}"
   end
 end
