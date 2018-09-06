@@ -9,6 +9,6 @@ class App < Sinatra::Base
   post '/' do
     @words = params[:words]
 
-    @words
+    "#{@words}"
   end
 end
