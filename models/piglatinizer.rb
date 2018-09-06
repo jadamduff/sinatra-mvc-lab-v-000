@@ -27,7 +27,7 @@ class PigLatinizer
         new_phrase << new_word
       end
     end
-    return new_phrase
+    return new_phrase.join(' ')
   end
 
 
