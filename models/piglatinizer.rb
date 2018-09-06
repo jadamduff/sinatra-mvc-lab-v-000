@@ -9,9 +9,15 @@ class PigLatinizer
       new_word << word.slice(0, 3)
       return new_word << "ay"
     when consonants.include?(word[0]) && consonants.include?(word[1])
-
+      new_word = word.slice(2, word.length)
+      new_word << word.slice(0, 2)
+      return new_word << "ay"
     when consonants.include?(word[0])
-
+      new_word = word.slice(1, word.length)
+      new_word << word.slice(0, 1)
+      return new_word << "ay"
+    when vowels.include?(word[0])
+      return word << "way"
     end
   end
 end
