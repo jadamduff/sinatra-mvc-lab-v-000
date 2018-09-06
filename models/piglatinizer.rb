@@ -1,8 +1,8 @@
 class PigLatinizer
 
   def piglatinize(word)
-    consonants = [ 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z', 'w', 'y']
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    consonants = [ 'b', 'B', 'c', 'C', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'v', 'V', 'x', 'X', 'z', 'Z', 'w', 'W', 'y', 'Y']
+    vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
     if consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
       new_word = word.slice(3, word.length)
       new_word << word.slice(0, 3)
