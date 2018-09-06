@@ -8,5 +8,10 @@ class PigLatinizer
       new_word = word.slice(3, word.length)
       new_word << word.slice(0, 3)
       return new_word << "ay"
+    when consonants.include?(word[0]) && consonants.include?(word[1])
+
+    when consonants.include?(word[0])
+
+    end
   end
 end
